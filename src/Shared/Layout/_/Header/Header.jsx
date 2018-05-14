@@ -11,7 +11,7 @@ export default function Header() {
         		<Col md={4}>
 							<Navbar.Header>
 								<Navbar.Brand>
-								  <a href="#home">Museu da<span>Imprensa</span></a>
+								  <a id="home" href="#home">Museu da<span>Imprensa</span></a>
 								</Navbar.Brand>
 							</Navbar.Header>
 						</Col>
