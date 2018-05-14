@@ -1,3 +1,36 @@
 .virtual-tour {
-    
+    padding: 4rem 0;
+}
+
+.virtual-tour .header-section {
+	padding: 0 0 5.6rem 0;
+	text-align: center;
+}
+
+.virtual-tour .header-section h1 {
+	font-family: 'Playfair Display', serif;
+	font-size: 6.8rem;
+	margin: 0;
+}
+
+.virtual-tour img {
+    width: 27rem;
+}
+
+.virtual-tour .btn-section {
+	padding: 6.6rem 0;
+}
+
+.virtual-tour .btn-section .custom-btn {
+	border: 1px solid #B39F51;
+	border-radius: 3px;
+	color: #B39F51;
+	display: block;
+	font-family: 'Poppins', sans-serif;
+	font-size: 16px;
+	font-weight: 300;
+	margin: 0 auto;
+	padding: 11px 5px;
+	text-align: center;
+	width: 85%;
 }

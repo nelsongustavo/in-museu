@@ -13,15 +13,10 @@ export default class Home extends Component {
     return (
       <div className="home">
         <Layout>
-          <Grid>
-            <Collection />
-            <Museum />
-            <Videos />
-            <VirtualTour />
-
-            <h1>Museo da Imprensa</h1>
-            <h2>Bla Bla Bla Bla Bla Bla</h2>
-          </Grid>
+          <Collection />
+          <Museum />
+          <Videos />
+          <VirtualTour />
         </Layout>
       </div>
     );
