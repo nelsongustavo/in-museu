@@ -6,22 +6,6 @@
   padding: 15px;
 }
 
-.layout .header a {
-  font-family: 'Open Sans',sans-serif;
-  font-size: 18px;
-  color: #ffffff;
-  display: block;
-  line-height: 50px;
-  text-decoration: none;
-  text-transform: uppercase;
-  font-weight: bold;
-}
-
-.layout .header a span {
-  font-size: 12px;
-  color: #d9534f;
-}
-
 .layout .navbar {
   margin-bottom: 0;
   border-radius: 0;

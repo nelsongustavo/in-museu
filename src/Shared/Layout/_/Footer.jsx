@@ -3,7 +3,7 @@ import { Grid, Navbar, Row, Col } from 'react-bootstrap';
 
 export default function Footer() {
   return (
-    <Navbar inverse className="layout-footer">
+    <Navbar className="layout-footer">
       <Grid>
         <Row className="show-grid">
           <Col md={8} mdOffset={0} />

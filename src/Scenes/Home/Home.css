@@ -1,11 +1,3 @@
-.home .layout-footer {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  /* Set the fixed height of the footer here */
-  height: 108px;
-}
-
 .home .banner h1 {
   color: black;
   padding-top: 41px;

@@ -21,8 +21,6 @@
 	display: block;
 }
 
-
-
 .header .header-nav-menu {
 	width: 100%;
 }
@@ -34,7 +32,37 @@
 .header .header-nav-menu li a {
 	color: #000;
 	font-family: 'Poppins', sans-serif;
+	font-size: 1.8rem;
 	font-weight: 300;
 	padding: 5.5rem 0 3.3rem 0;
-    line-height: normal;
+  line-height: normal;
 }
+
+.header .banner-header {
+	background: #F5F5F5;
+	height: 45vw;
+}
+
+.header .banner-header .container {
+	background: url(/images/foto_01.png) no-repeat right center;
+	background-size: contain;
+}
+
+.header .banner-header .container h1 {
+	font-family: 'Playfair Display', serif;
+	font-size: 6.8rem;
+	margin-top: 19rem;
+	margin-bottom: 5.4rem;
+}
+
+.header .banner-header .container p {
+	font-family: 'Poppins', serif;
+	font-size: 1.8rem;
+	font-weight: 300;
+	margin-left: 5rem;
+}
+
+.header .banner-header .container p span {
+	font-weight: 500;
+}
+
