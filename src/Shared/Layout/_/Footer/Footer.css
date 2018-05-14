@@ -44,8 +44,8 @@
 	content: url("/images/angle-up.svg");
 	display: block;
 	float: left;
-    margin-right: 12px;
-    width: 12px;
+    margin-right: 1.2rem;
+    width: 1.2rem;
 }
 
 .layout-footer .info-footer {

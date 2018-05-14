@@ -1,3 +1,7 @@
+.header {
+	background: #F5F5F5;
+}
+
 .header nav.navbar {
 	background-image: none;
 	background: #F5F5F5;
@@ -35,12 +39,11 @@
 	font-size: 1.8rem;
 	font-weight: 300;
 	padding: 5.5rem 0 3.3rem 0;
-  line-height: normal;
+	line-height: normal;
 }
 
 .header .banner-header {
-	background: #F5F5F5;
-	height: 45vw;
+	height: 40vw;
 }
 
 .header .banner-header .container {
@@ -66,3 +69,13 @@
 	font-weight: 500;
 }
 
+.header .button-bottom {
+	padding: 1.5em 0 3em 0;
+}
+
+.header .button-bottom .container .next-section {
+	content: url("/images/angle-down.svg");
+	display: block;
+	margin: 0 auto;
+    width: 4.6rem;
+}

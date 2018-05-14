@@ -50,6 +50,15 @@ export default function Header() {
 						</Row>
 					</Grid>
 				</div>
+				<div className="button-bottom">
+					<Grid>
+						<Row>
+							<Col md={2} mdOffset={5}>
+								<a href="#" className="next-section">&nbsp;</a>
+							</Col>
+						</Row>
+					</Grid>
+				</div>
       </header>
     </div>
   );
