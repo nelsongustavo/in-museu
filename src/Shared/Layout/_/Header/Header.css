@@ -5,8 +5,36 @@
 	box-shadow: none;
 }
 
+.header .navbar-header .navbar-brand {
+	color: #000;
+	font-family: 'Droid Serif Regular', sans-serif;
+	font-weight: normal;
+	font-size: 2rem;
+	line-height: 3.5rem;
+	height: auto;
+	text-transform: initial;
+}
+
+.header .navbar-header .navbar-brand span {
+	color: #000;
+	font-size: 4.5rem;
+	display: block;
+}
+
+
+
+.header .header-nav-menu {
+	width: 100%;
+}
+
+.header .header-nav-menu li {
+	width: 20%;
+}
+
 .header .header-nav-menu li a {
 	color: #000;
 	font-family: 'Poppins', sans-serif;
 	font-weight: 300;
+	padding: 5.5rem 0 3.3rem 0;
+    line-height: normal;
 }
