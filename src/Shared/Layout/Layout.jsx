@@ -1,6 +1,6 @@
 import React from 'react';
 import Header from './_/Header/Header';
-import Footer from './_/Footer';
+import Footer from './_/Footer/Footer';
 import './Layout.css';
 
 export default function Layout(props) {

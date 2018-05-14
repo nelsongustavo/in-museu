@@ -1,0 +1,57 @@
+.layout-footer {
+	background-color: #060701;
+	color: #FFF;
+	font-family: 'Droid Serif Regular', sans-serif;
+	font-size: 1.2rem;
+	font-weight: normal;
+}
+
+.layout-footer .navbar-default {
+	background-color: #060701; 
+	background-image: none;
+	border: 0;
+	box-shadow: none;
+}
+
+.layout-footer .navbar .col-md-12 {
+	border-bottom: 1px solid #A7A7A7;
+}
+
+.layout-footer .navbar .footer-nav-menu {
+	padding: 3.7rem 0;
+	width: 50%;
+}
+
+.layout-footer .navbar .footer-nav-menu li {
+	width: 20%;
+}
+
+.layout-footer .navbar .footer-nav-menu li a {
+	color: #fff;
+	padding: 0;
+}
+
+.layout-footer .navbar .back-to-top {
+	padding: 3.7rem 0;
+}
+
+.layout-footer .navbar .back-to-top li a {
+	color: #B39F51;
+	padding: 0;
+}
+
+.layout-footer .navbar .back-to-top li a:before {
+	content: url("/images/angle-up.svg");
+	display: block;
+	float: left;
+    margin-right: 12px;
+    width: 12px;
+}
+
+.layout-footer .info-footer {
+	padding: 6.4rem 0 4.7rem 0;
+}
+
+.layout-footer .info-footer .col-md-6 p{
+	line-height: 2.6rem;
+}
