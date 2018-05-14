@@ -9,13 +9,13 @@ class Modal extends Component {
     super();
 
     this.state = {
-      email: "",
-      message: "",
       modalIsOpen: true
     };
 
     this.openModal = this.openModal.bind(this);
     this.closeModal = this.closeModal.bind(this);
+    this.prevVideo = this.prevVideo.bind(this);
+    this.nextVideo = this.nextVideo.bind(this);
   }
 
   openModal() {
@@ -24,8 +24,16 @@ class Modal extends Component {
 
   closeModal() {
     this.setState({modalIsOpen: false}, () => {
-      this.props.closeForm();
+      this.props.closeModal();
     });
+  }
+
+  nextVideo() {
+    this.props.nextVideo();
+  }
+
+  prevVideo() {
+    this.props.prevVideo();
   }
 
   render() {
@@ -36,10 +44,14 @@ class Modal extends Component {
            <BootstrapModal.Title>{this.props.title}</BootstrapModal.Title>
          </BootstrapModal.Header>
          <BootstrapModal.Body>
-          <Video videoId="xLzQ1m-Q9Rg" />
+          <Video videoId={this.props.videoId} />
+          
+          <a className="prev" onClick={this.prevVideo}>&#10094;</a>
+          <a className="next" onClick={this.nextVideo}>&#10095;</a>
+
          </BootstrapModal.Body>
          <BootstrapModal.Footer>
-           <p>Suas informações estão seguras.</p>
+           <p>Videos da imprensa Nacional</p>
          </BootstrapModal.Footer>
        </BootstrapModal>
       </div>
