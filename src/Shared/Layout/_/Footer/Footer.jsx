@@ -1,12 +1,13 @@
 import React, { Component } from 'react';
 import { Navbar, Nav, NavItem, Grid, Row, Col } from 'react-bootstrap';
-import { animateScroll as scroll } from 'react-scroll'
+import { animateScroll as scroll, Link } from 'react-scroll'
 import './Footer.css';
 
 class Footer extends Component {
 
   constructor(props) {
     super(props);
+
     this.scrollToTop = this.scrollToTop.bind(this);
   }
   
@@ -25,22 +26,11 @@ class Footer extends Component {
             <Row>
               <Col md={12}>
                 <Nav className="footer-nav-menu">
-                  <NavItem eventKey={1} href="#">
-                    INÍCIO
-                  </NavItem>
-                  <NavItem eventKey={2} href="#">
-                    ACERVO
-                  </NavItem>
-                  <NavItem eventKey={3} href="#">
-                    O MUSEU
-                  </NavItem>
-                  <NavItem eventKey={4} href="#">
-                    VÍDEOS
-                  </NavItem>
-                  <NavItem eventKey={5} href="#">
-                    PASSEIO VIRTUAL
-                  </NavItem>
-  
+                  <li><Link to="inicio" spy smooth duration={500}>INÍCIO</Link></li>
+                  <li><Link to="acervo" spy smooth duration={500}>ACERVO</Link></li>
+                  <li><Link to="museu" spy smooth duration={500}>O MUSEU</Link></li>
+                  <li><Link to="videos" spy smooth duration={500}>VÍDEOS</Link></li>
+                  <li><Link to="virtual" spy smooth duration={500}>PASSEIO VIRTUAL</Link></li>
                 </Nav>
                 <Nav pullRight className="back-to-top">
                   <NavItem eventKey={6} href="#" onClick={this.scrollToTop}>

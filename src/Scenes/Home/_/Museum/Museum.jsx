@@ -5,7 +5,7 @@ import './Museum.css';
 export default function Museum() {
 
   return (
-    <div className="museum">
+    <div id="museu" className="museum">
 			<Grid>
 				<Row>
 					<Col md={8} mdOffset="2" className="header-section">

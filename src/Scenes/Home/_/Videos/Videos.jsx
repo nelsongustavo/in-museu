@@ -74,7 +74,7 @@ export default class Videos extends Component {
   
   render() {
     return (
-      <div className="videos">
+      <div id="videos" className="videos">
         <Grid>
           <Row>
             <Col md={12} className="header-section">
@@ -93,7 +93,6 @@ export default class Videos extends Component {
             </Col>
           </Row>
         </Grid>
-
         { this.renderVideos() }
         { this.state.showModal ? <Modal title="Video Boladão" videoId={videos[this.state.index].videoId} closeModal={this.closeModal} prevVideo={this.prevVideo} nextVideo={this.nextVideo} /> : null }
       </div>

@@ -95,7 +95,7 @@ export default class Collection extends Component {
 		const image = images[this.state.index];
 		
 		return (
-			<div className="collection">
+			<div id="acervo" className="collection">
 				<Grid>
 					<Row>
 						<Col md={12} className="header-section">
