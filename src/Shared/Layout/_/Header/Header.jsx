@@ -7,7 +7,7 @@ export default function Header() {
   return (
     <div className="header">
       <header>
-        <Navbar>
+        <Navbar fixedTop>
         	<Row>
         		<Col md={4}>
 							<Navbar.Header>
@@ -18,11 +18,11 @@ export default function Header() {
 						</Col>
 						<Col md={8}>
 							<Nav className="header-nav-menu">
-								<li><Link to="inicio" spy smooth duration={500}>INÍCIO</Link></li>
-								<li><Link to="acervo" spy smooth duration={500}>ACERVO</Link></li>
-								<li><Link to="museu" spy smooth duration={500}>O MUSEU</Link></li>
-								<li><Link to="videos" spy smooth duration={500}>VÍDEOS</Link></li>
-								<li><Link to="virtual" spy smooth duration={500}>PASSEIO VIRTUAL</Link></li>
+								<li><Link to="inicio" spy smooth duration={500} offset={-70}>INÍCIO</Link></li>
+								<li><Link to="acervo" spy smooth duration={500} offset={-70}>ACERVO</Link></li>
+								<li><Link to="museu" spy smooth duration={500} offset={-110}>O MUSEU</Link></li>
+								<li><Link to="videos" spy smooth duration={500} offset={-70}>VÍDEOS</Link></li>
+								<li><Link to="virtual" spy smooth duration={500} offset={-70}>PASSEIO VIRTUAL</Link></li>
 							</Nav>
 						</Col>
 					</Row>
@@ -45,7 +45,7 @@ export default function Header() {
 					<Grid>
 						<Row>
 							<Col md={2} mdOffset={5}>
-								<Link className="next-section" to="acervo" spy smooth duration={500}>&nbsp;</Link>
+								<Link className="next-section" to="acervo" spy smooth duration={500} offset={-70}>&nbsp;</Link>
 							</Col>
 						</Row>
 					</Grid>

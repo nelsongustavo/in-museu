@@ -14,7 +14,8 @@ class Footer extends Component {
   scrollToTop() {
     scroll.scrollToTop({
       duration: 500,
-      smooth: true
+      smooth: true,
+      offSet: 70
     });
   }
 
@@ -26,11 +27,11 @@ class Footer extends Component {
             <Row>
               <Col md={12}>
                 <Nav className="footer-nav-menu">
-                  <li><Link to="inicio" spy smooth duration={500}>INÍCIO</Link></li>
-                  <li><Link to="acervo" spy smooth duration={500}>ACERVO</Link></li>
-                  <li><Link to="museu" spy smooth duration={500}>O MUSEU</Link></li>
-                  <li><Link to="videos" spy smooth duration={500}>VÍDEOS</Link></li>
-                  <li><Link to="virtual" spy smooth duration={500}>PASSEIO VIRTUAL</Link></li>
+                  <li><Link to="inicio" spy smooth duration={500} offset={-70}>INÍCIO</Link></li>
+                  <li><Link to="acervo" spy smooth duration={500} offset={-70}>ACERVO</Link></li>
+                  <li><Link to="museu" spy smooth duration={500} offset={-110}>O MUSEU</Link></li>
+                  <li><Link to="videos" spy smooth duration={500} offset={-70}>VÍDEOS</Link></li>
+                  <li><Link to="virtual" spy smooth duration={500} offset={-70}>PASSEIO VIRTUAL</Link></li>
                 </Nav>
                 <Nav pullRight className="back-to-top">
                   <NavItem eventKey={6} href="#" onClick={this.scrollToTop}>
