@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
 import { Modal as BootstrapModal } from 'react-bootstrap';
 import Video from '../Video';
-import './Modal.css';
+import './VideoModal.css';
 
-class Modal extends Component {
+class VideoModal extends Component {
 
   constructor() {
     super();
@@ -59,4 +59,4 @@ class Modal extends Component {
   }
 }
 
-export default Modal;
+export default VideoModal;

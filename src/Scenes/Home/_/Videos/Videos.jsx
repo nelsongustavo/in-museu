@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import _ from "lodash";
 import { Button } from 'react-bootstrap';
-import Modal from '../../../../Shared/Modal';
+import Modal from './_/VideoModal';
 import './Videos.css';
 
 const videos = [
@@ -40,7 +40,8 @@ export default class Videos extends Component {
           key={video.videoId}
           bsStyle="danger"
           onClick={() => this.handleModalButton(i)}
-          title={video.title}>
+          title={video.title}
+        >
           {video.title}
         </Button>
       );
@@ -60,13 +61,13 @@ export default class Videos extends Component {
 
   prevVideo() {
     const i = this.state.index;
-    this.setState({index: i==0?videos.length-1:i-1})
+    this.setState({index: i===0?videos.length-1:i-1})
   }
 
   closeModal() {
     this.setState({
       showModal: false,
-      videoId: ""
+      index: 0
     })
   }
   
