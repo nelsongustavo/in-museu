@@ -52,10 +52,10 @@ export default class Videos extends Component {
     return _.map(videos, (video, i) => {
       return (
         <Row className="content-section" key={video.videoId} onClick={() => this.handleModalButton(i)}>
-          <Col md={4} mdOffset={1} mdPush={video.push?7:0}>
+          <Col md={4} mdOffset={1} mdPush={video.push?6:0}>
             <img src={video.image} alt={video.title} />
           </Col>
-          <Col md={6} mdOffset={1} mdPull={video.push?7:0}>
+          <Col md={6} mdOffset={1} mdPull={video.push?6:0}>
             <time datetime={video.date}>{video.date}</time>
             <div className="header-line-h" />
             <h2>{video.title}</h2>
