@@ -36,6 +36,15 @@ export default function Museum() {
 						<p>Anualmente, essa instituição museológica promove o Concurso Museu da Imprensa de Desenho, Redação, Poesia e Monografia, que já chegou a décima quinta edição. É uma realização da Imprensa Nacional que atrai estudantes de todo o país.</p>
 					</Col>
 				</Row>
+				<div className="button-bottom">
+					<Grid>
+						<Row>
+							<Col md={2} mdOffset={5}>
+								<a href="#" className="next-section">&nbsp;</a>
+							</Col>
+						</Row>
+					</Grid>
+				</div>
 			</Grid>
     </div>
   );
