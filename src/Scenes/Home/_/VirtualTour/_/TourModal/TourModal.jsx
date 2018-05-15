@@ -1,9 +1,8 @@
 import React, { Component } from 'react';
 import { Modal as BootstrapModal } from 'react-bootstrap';
-import Video from '../Video';
-import './VideoModal.css';
+import './TourModal.css';
 
-class VideoModal extends Component {
+class TourModal extends Component {
 
   constructor() {
     super();
@@ -14,8 +13,6 @@ class VideoModal extends Component {
 
     this.openModal = this.openModal.bind(this);
     this.closeModal = this.closeModal.bind(this);
-    this.prevVideo = this.prevVideo.bind(this);
-    this.nextVideo = this.nextVideo.bind(this);
   }
 
   openModal() {
@@ -28,30 +25,20 @@ class VideoModal extends Component {
     });
   }
 
-  nextVideo() {
-    this.props.nextVideo();
-  }
-
-  prevVideo() {
-    this.props.prevVideo();
-  }
-
   render() {
     return (
-      <div className="modal">
+      <div className="tour-modal">
         <BootstrapModal show={this.state.modalIsOpen} onHide={this.closeModal}>
          <BootstrapModal.Header closeButton>
-           <BootstrapModal.Title>{this.props.title}</BootstrapModal.Title>
+           <BootstrapModal.Title>{this.props.content}</BootstrapModal.Title>
          </BootstrapModal.Header>
          <BootstrapModal.Body>
-          <Video videoId={this.props.videoId} />
-          
-          <a className="prev" onClick={this.prevVideo}><img src="/images/button-left.svg" alt="prev" /></a>
-          <a className="next" onClick={this.nextVideo}><img src="/images/button-right.svg" alt="next" /></a>
-
+          <div className="embed-responsive embed-responsive-16by9">
+            <iframe className="embed-responsive-item" frameBorder="0" allowFullScreen="1" title="TourModal" src={this.props.src} />
+          </div>
          </BootstrapModal.Body>
          <BootstrapModal.Footer>
-           <p>Videos da imprensa Nacional</p>
+           <p>Tour Da Imprensa</p>
          </BootstrapModal.Footer>
        </BootstrapModal>
       </div>
@@ -59,4 +46,4 @@ class VideoModal extends Component {
   }
 }
 
-export default VideoModal;
+export default TourModal;

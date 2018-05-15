@@ -46,8 +46,8 @@ class ImageModal extends Component {
          <BootstrapModal.Body>
           <Image src={this.props.src} />
           
-          <a className="prev" onClick={this.prevImage}><img src="/images/button-left.svg" /></a>
-          <a className="next" onClick={this.nextImage}><img src="/images/button-right.svg" /></a>
+          <a className="prev" onClick={this.prevImage}><img src="/images/button-left.svg" alt="prev" /></a>
+          <a className="next" onClick={this.nextImage}><img src="/images/button-right.svg" alt="next"/></a>
 
          </BootstrapModal.Body>
          <BootstrapModal.Footer>

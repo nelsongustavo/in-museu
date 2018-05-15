@@ -8,7 +8,7 @@ export default function Image({ src }) {
 
   return (
     <div className="image">
-      <img src={src} />
+      <img src={src} alt="Imagem"/>
     </div>
   );
 };
