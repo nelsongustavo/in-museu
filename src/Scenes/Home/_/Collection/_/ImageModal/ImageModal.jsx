@@ -39,7 +39,7 @@ class ImageModal extends Component {
   render() {
     return (
       <div className="image-modal">
-        <BootstrapModal show={this.state.modalIsOpen} onHide={this.closeModal}>
+        <BootstrapModal show={this.state.modalIsOpen} onHide={this.closeModal} bsSize="large">
          <BootstrapModal.Header closeButton>
            <BootstrapModal.Title>{this.props.content}</BootstrapModal.Title>
          </BootstrapModal.Header>

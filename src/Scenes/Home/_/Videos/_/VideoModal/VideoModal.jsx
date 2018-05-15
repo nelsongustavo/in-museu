@@ -39,7 +39,7 @@ class VideoModal extends Component {
   render() {
     return (
       <div className="modal">
-        <BootstrapModal show={this.state.modalIsOpen} onHide={this.closeModal}>
+        <BootstrapModal show={this.state.modalIsOpen} onHide={this.closeModal} dialogClassName="custom-modal">
          <BootstrapModal.Header closeButton>
            <BootstrapModal.Title>{this.props.title}</BootstrapModal.Title>
          </BootstrapModal.Header>

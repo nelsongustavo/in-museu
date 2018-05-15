@@ -28,7 +28,7 @@ class TourModal extends Component {
   render() {
     return (
       <div className="tour-modal">
-        <BootstrapModal show={this.state.modalIsOpen} onHide={this.closeModal}>
+        <BootstrapModal show={this.state.modalIsOpen} onHide={this.closeModal} dialogClassName="custom-modal">
          <BootstrapModal.Header closeButton>
            <BootstrapModal.Title>{this.props.content}</BootstrapModal.Title>
          </BootstrapModal.Header>
