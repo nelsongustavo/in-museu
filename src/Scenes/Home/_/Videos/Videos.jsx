@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import { Grid, Row, Col } from 'react-bootstrap';
 import _ from "lodash";
 import { Button } from 'react-bootstrap';
 import Modal from './_/VideoModal';
@@ -79,6 +80,24 @@ export default class Videos extends Component {
   render() {
     return (
       <div id="videos" className="videos">
+        <Grid>
+          <Row>
+            <Col md={12} className="header-section">
+              <h1>Vídeos</h1>
+            </Col>
+          </Row>
+          <Row className="content-section">
+            <Col md={4} mdOffset={1}>
+              <img src="/images/foto_08.png" alt="" />
+            </Col>
+            <Col md={6} mdOffset={1}>
+              <time datetime="AGOSTO 18">AGOSTO 18</time>
+              <div className="header-line-h"></div>
+              <h2>Conheça no detalhe a máquina de pautadeira da Imprensa</h2>
+              <p>O Museu da Imprensa exibe modelos dessas máquinas, de origem norte-americana.</p>
+            </Col>
+          </Row>
+        </Grid>
         { this.renderVideos() }
         { this.state.showModal ? <Modal title="Video Boladão" videoId={videos[this.state.index].videoId} closeModal={this.closeModal} prevVideo={this.prevVideo} nextVideo={this.nextVideo} /> : null }
       </div>
