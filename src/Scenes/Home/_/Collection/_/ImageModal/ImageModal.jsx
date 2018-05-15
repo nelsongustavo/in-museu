@@ -38,7 +38,7 @@ class ImageModal extends Component {
 
   render() {
     return (
-      <div className="modal">
+      <div className="image-modal">
         <BootstrapModal show={this.state.modalIsOpen} onHide={this.closeModal}>
          <BootstrapModal.Header closeButton>
            <BootstrapModal.Title>{this.props.content}</BootstrapModal.Title>
@@ -46,8 +46,8 @@ class ImageModal extends Component {
          <BootstrapModal.Body>
           <Image src={this.props.src} />
           
-          <a className="prev" onClick={this.prevImage}>&#10094;</a>
-          <a className="next" onClick={this.nextImage}>&#10095;</a>
+          <a className="prev" onClick={this.prevImage}><img src="/images/button-left.svg" /></a>
+          <a className="next" onClick={this.nextImage}><img src="/images/button-right.svg" /></a>
 
          </BootstrapModal.Body>
          <BootstrapModal.Footer>

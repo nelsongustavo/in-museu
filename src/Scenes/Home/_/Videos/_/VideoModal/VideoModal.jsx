@@ -46,8 +46,8 @@ class VideoModal extends Component {
          <BootstrapModal.Body>
           <Video videoId={this.props.videoId} />
           
-          <a className="prev" onClick={this.prevVideo}>&#10094;</a>
-          <a className="next" onClick={this.nextVideo}>&#10095;</a>
+          <a className="prev" onClick={this.prevVideo}><img src="/images/button-left.svg" /></a>
+          <a className="next" onClick={this.nextVideo}><img src="/images/button-right.svg" /></a>
 
          </BootstrapModal.Body>
          <BootstrapModal.Footer>

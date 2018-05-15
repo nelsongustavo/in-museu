@@ -15,17 +15,17 @@ const videos = [
     push: false
   },
   {
-    title: 'Conheça detalhes da Máquina Tipográfica Tip Top',
-    content: 'Minervas sucederam as prensas e prelos." Na evolução histórica da impressão, elas sucederam as prensas tipográficas manuais — dos séculos XVI e XVII — e os prelos.',
-    videoId: 'EXhfaDXATgg',
+    title: 'Conheça a ultima maquina usada na impressão do DOU',
+    content: 'Neste vídeo é possível conferir um pouco como era o dia a dia de impressão do Diário Oficial da União antes da desativação oficial da impressão em papel.',
+    videoId: '_kuv4L8rUOY',
     image: '/images/foto_04.png',
     date: 'AGOSTO 18',
     push: true
   },
   {
-    title: 'Conheça a ultima maquina usada na impressão do DOU',
-    content: 'Neste vídeo é possível conferir um pouco como era o dia a dia de impressão do Diário Oficial da União antes da desativação oficial da impressão em papel.',
-    videoId: '_kuv4L8rUOY',
+    title: 'Conheça detalhes da Máquina Tipográfica Tip Top',
+    content: 'Minervas sucederam as prensas e prelos." Na evolução histórica da impressão, elas sucederam as prensas tipográficas manuais — dos séculos XVI e XVII — e os prelos.',
+    videoId: 'EXhfaDXATgg',
     image: '/images/foto_05.png',
     date: 'AGOSTO 18',
     push: false
@@ -100,7 +100,7 @@ export default class Videos extends Component {
           </Row>
           { this.renderVideos() }
         </Grid>
-        { this.state.showModal ? <Modal title="Video Boladão" videoId={videos[this.state.index].videoId} closeModal={this.closeModal} prevVideo={this.prevVideo} nextVideo={this.nextVideo} /> : null }
+        { this.state.showModal ? <Modal title={videos[this.state.index].title} videoId={videos[this.state.index].videoId} closeModal={this.closeModal} prevVideo={this.prevVideo} nextVideo={this.nextVideo} /> : null }
       </div>
     );
   }

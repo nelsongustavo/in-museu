@@ -1,19 +1,43 @@
 .modal .modal-header {
-  background-color: #d9534f;
+  border: 0;
 }
 
 .modal .modal-header h4 {
-  text-align: center;
   font-size: 26px;
-  color: white;
+  color: #000;
+  font-family: 'Playfair Display', serif;
+  margin: 0;
+  text-align: center;
+  padding: 0 2rem;
 }
 
-.modal .modal-footer p {
-  text-align: center;
+.modal .modal-header .close {
+  font-size: 30px;
+  margin: -12px -8px 0 0;
+}
+
+.modal .modal-footer {
+  display: none;
 }
 
 .modal .modal-body {
   padding: 45px 55px;
+  text-align: center;
+}
+
+.modal .modal-body img {
+  width: 35rem
+}
+
+.modal .modal-body .prev img,
+.modal .modal-body .next img {
+  width: 4rem;
+  margin-top: 5rem;
+  cursor: pointer;
+}
+
+.modal .modal-body .next img {
+  margin-left: 0.6rem; 
 }
 
 .modal .modal-group button {
