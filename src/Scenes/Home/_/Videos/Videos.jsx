@@ -6,14 +6,19 @@ import './Videos.css';
 
 const videos = [
   {
-    title: 'Video 1',
-    content: 'The dashboard is your main homepage. It will display a feed of looks...',
-    videoId: 'bg9bGUewYzQ'
+    title: 'Máquina de Pautar',
+    content: 'Máquina de Pautar',
+    videoId: 'hp-nipVPp60'
   },
   {
-    title: 'Video 2',
-    content: 'Discover allows you to find new looks, what is trending and search for looks, brands and users',
-    videoId: 'xLzQ1m-Q9Rg'
+    title: 'Impressora Vertical Tip Top',
+    content: 'Impressora Vertical Tip Top',
+    videoId: 'EXhfaDXATgg'
+  },
+  {
+    title: 'Impressão do Diário Oficial da União',
+    content: 'Impressão do Diário Oficial da União',
+    videoId: '_kuv4L8rUOY'
   }
 ];
 

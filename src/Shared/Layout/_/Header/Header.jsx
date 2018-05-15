@@ -1,6 +1,6 @@
 import React from 'react';
 import { Navbar, Nav, Grid, Row, Col } from 'react-bootstrap';
-import { Link } from 'react-scroll'
+import { Link } from 'react-scroll';
 import './Header.css';
 
 export default function Header() {

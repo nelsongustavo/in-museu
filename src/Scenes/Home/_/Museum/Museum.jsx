@@ -1,5 +1,6 @@
 import React from "react";
 import { Grid, Row, Col } from 'react-bootstrap';
+import { Link } from 'react-scroll';
 import './Museum.css';
 
 export default function Museum() {
@@ -10,7 +11,7 @@ export default function Museum() {
 				<Row>
 					<Col md={8} mdOffset="2" className="header-section">
 						<h1>Um pouco sobre o Museu</h1>
-		    		<div className="header-line"></div>
+		    		<div className="header-line" />
 					</Col>
 				</Row>
 				<Row className="content-section">
@@ -40,7 +41,7 @@ export default function Museum() {
 					<Grid>
 						<Row>
 							<Col md={2} mdOffset={5}>
-								<a href="#" className="next-section">&nbsp;</a>
+                <Link className="next-section" to="videos" spy smooth duration={500}>&nbsp;</Link>
 							</Col>
 						</Row>
 					</Grid>
