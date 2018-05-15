@@ -11,34 +11,37 @@ const videos = [
     content: 'O Museu da Imprensa exibe modelos dessas máquinas, de origem norte-americana.',
     videoId: 'hp-nipVPp60',
     image: '/images/foto_08.png',
-    date: 'AGOSTO 18'
+    date: 'AGOSTO 18',
+    push: false
   },
   {
     title: 'Conheça detalhes da Máquina Tipográfica Tip Top',
     content: 'Minervas sucederam as prensas e prelos." Na evolução histórica da impressão, elas sucederam as prensas tipográficas manuais — dos séculos XVI e XVII — e os prelos.',
     videoId: 'EXhfaDXATgg',
     image: '/images/foto_04.png',
-    date: 'AGOSTO 18'
+    date: 'AGOSTO 18',
+    push: true
   },
   {
     title: 'Conheça a ultima maquina usada na impressão do DOU',
     content: 'Neste vídeo é possível conferir um pouco como era o dia a dia de impressão do Diário Oficial da União antes da desativação oficial da impressão em papel.',
     videoId: '_kuv4L8rUOY',
-    image: '/images/foto_04.png',
-    date: 'AGOSTO 18'
+    image: '/images/foto_05.png',
+    date: 'AGOSTO 18',
+    push: false
   }
 ];
 
 export default class Videos extends Component {
-  
+
   constructor(props) {
     super(props);
-    
+
     this.state = {
       showModal: false,
       index: 0
     };
-    
+
     this.handleModalButton = this.handleModalButton.bind(this);
     this.nextVideo = this.nextVideo.bind(this);
     this.prevVideo = this.prevVideo.bind(this);
@@ -49,10 +52,10 @@ export default class Videos extends Component {
     return _.map(videos, (video, i) => {
       return (
         <Row className="content-section" key={video.videoId} onClick={() => this.handleModalButton(i)}>
-          <Col md={4} mdOffset={1}>
+          <Col md={4} mdOffset={1} mdPush={video.push?7:0}>
             <img src={video.image} alt={video.title} />
           </Col>
-          <Col md={6} mdOffset={1}>
+          <Col md={6} mdOffset={1} mdPull={video.push?7:0}>
             <time datetime={video.date}>{video.date}</time>
             <div className="header-line-h" />
             <h2>{video.title}</h2>
@@ -85,7 +88,7 @@ export default class Videos extends Component {
       index: 0
     })
   }
-  
+
   render() {
     return (
       <div id="videos" className="videos">
