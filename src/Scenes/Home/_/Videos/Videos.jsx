@@ -73,7 +73,7 @@ export default class Videos extends Component {
   
   render() {
     return (
-      <div className="videos">
+      <div id="videos" className="videos">
         { this.renderVideos() }
         { this.state.showModal ? <Modal title="Video Boladão" videoId={videos[this.state.index].videoId} closeModal={this.closeModal} prevVideo={this.prevVideo} nextVideo={this.nextVideo} /> : null }
       </div>

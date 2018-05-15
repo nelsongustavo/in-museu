@@ -4,7 +4,7 @@ import './Museum.css';
 export default function Museum() {
 
   return (
-    <div className="museum">
+    <div id="museu" className="museum">
       <p>Museum</p>
     </div>
   );

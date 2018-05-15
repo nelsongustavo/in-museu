@@ -5,7 +5,7 @@ import './VirtualTour.css';
 export default function VirtualTour() {
 
   return (
-    <div className="virtual-tour">
+    <div id="virtual" className="virtual-tour">
 			<Grid>
 				<Row>
 					<Col md={12} className="header-section">

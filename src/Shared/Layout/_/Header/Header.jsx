@@ -1,5 +1,6 @@
 import React from 'react';
-import { Navbar, Nav, NavItem, Grid, Row, Col } from 'react-bootstrap';
+import { Navbar, Nav, Grid, Row, Col } from 'react-bootstrap';
+import { Link } from 'react-scroll'
 import './Header.css';
 
 export default function Header() {
@@ -17,26 +18,16 @@ export default function Header() {
 						</Col>
 						<Col md={8}>
 							<Nav className="header-nav-menu">
-								<NavItem eventKey={1} href="#">
-								  INÍCIO
-								</NavItem>
-								<NavItem eventKey={2} href="#">
-								  ACERVO
-								</NavItem>
-								<NavItem eventKey={3} href="#">
-								  O MUSEU
-								</NavItem>
-								<NavItem eventKey={4} href="#">
-								  VÍDEOS
-								</NavItem>
-								<NavItem eventKey={5} href="#">
-								  PASSEIO VIRTUAL
-								</NavItem>
+								<li><Link to="inicio" spy smooth duration={500}>INÍCIO</Link></li>
+								<li><Link to="acervo" spy smooth duration={500}>ACERVO</Link></li>
+								<li><Link to="museu" spy smooth duration={500}>O MUSEU</Link></li>
+								<li><Link to="videos" spy smooth duration={500}>VÍDEOS</Link></li>
+								<li><Link to="virtual" spy smooth duration={500}>PASSEIO VIRTUAL</Link></li>
 							</Nav>
 						</Col>
 					</Row>
 				</Navbar>
-				<div className="banner-header">
+				<div id="inicio" className="banner-header element">
 					<Grid>
 						<Row>
 							<Col md={6}>
@@ -54,7 +45,7 @@ export default function Header() {
 					<Grid>
 						<Row>
 							<Col md={2} mdOffset={5}>
-								<a href="#" className="next-section">&nbsp;</a>
+								<Link className="next-section" to="acervo" spy smooth duration={500}>&nbsp;</Link>
 							</Col>
 						</Row>
 					</Grid>
