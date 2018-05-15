@@ -100,6 +100,7 @@ export default class Collection extends Component {
 					<Row>
 						<Col md={12} className="header-section">
 							<h1>Acervo</h1>
+							<div className="header-line"></div>
 						</Col>
 					</Row>
 					<Row className="section-gallery">
