@@ -7,19 +7,25 @@ import './Videos.css';
 
 const videos = [
   {
-    title: 'Máquina de Pautar',
-    content: 'Máquina de Pautar',
-    videoId: 'hp-nipVPp60'
+    title: 'Conheça no detalhe a máquina de pautadeira da Imprensa',
+    content: 'O Museu da Imprensa exibe modelos dessas máquinas, de origem norte-americana.',
+    videoId: 'hp-nipVPp60',
+    image: '/images/foto_08.png',
+    date: 'AGOSTO 18'
   },
   {
-    title: 'Impressora Vertical Tip Top',
-    content: 'Impressora Vertical Tip Top',
-    videoId: 'EXhfaDXATgg'
+    title: 'Conheça detalhes da Máquina Tipográfica Tip Top',
+    content: 'Minervas sucederam as prensas e prelos." Na evolução histórica da impressão, elas sucederam as prensas tipográficas manuais — dos séculos XVI e XVII — e os prelos.',
+    videoId: 'EXhfaDXATgg',
+    image: '/images/foto_04.png',
+    date: 'AGOSTO 18'
   },
   {
-    title: 'Impressão do Diário Oficial da União',
-    content: 'Impressão do Diário Oficial da União',
-    videoId: '_kuv4L8rUOY'
+    title: 'Conheça a ultima maquina usada na impressão do DOU',
+    content: 'Neste vídeo é possível conferir um pouco como era o dia a dia de impressão do Diário Oficial da União antes da desativação oficial da impressão em papel.',
+    videoId: '_kuv4L8rUOY',
+    image: '/images/foto_04.png',
+    date: 'AGOSTO 18'
   }
 ];
 
@@ -42,14 +48,17 @@ export default class Videos extends Component {
   renderVideos() {
     return _.map(videos, (video, i) => {
       return (
-        <Button
-          key={video.videoId}
-          bsStyle="danger"
-          onClick={() => this.handleModalButton(i)}
-          title={video.title}
-        >
-          {video.title}
-        </Button>
+        <Row className="content-section" key={video.videoId} onClick={() => this.handleModalButton(i)}>
+          <Col md={4} mdOffset={1}>
+            <img src={video.image} alt={video.title} />
+          </Col>
+          <Col md={6} mdOffset={1}>
+            <time datetime={video.date}>{video.date}</time>
+            <div className="header-line-h" />
+            <h2>{video.title}</h2>
+            <p>{video.content}</p>
+          </Col>
+        </Row>
       );
     });
   }
@@ -86,19 +95,8 @@ export default class Videos extends Component {
               <h1>Vídeos</h1>
             </Col>
           </Row>
-          <Row className="content-section">
-            <Col md={4} mdOffset={1}>
-              <img src="/images/foto_08.png" alt="" />
-            </Col>
-            <Col md={6} mdOffset={1}>
-              <time datetime="AGOSTO 18">AGOSTO 18</time>
-              <div className="header-line-h"></div>
-              <h2>Conheça no detalhe a máquina de pautadeira da Imprensa</h2>
-              <p>O Museu da Imprensa exibe modelos dessas máquinas, de origem norte-americana.</p>
-            </Col>
-          </Row>
+          { this.renderVideos() }
         </Grid>
-        { this.renderVideos() }
         { this.state.showModal ? <Modal title="Video Boladão" videoId={videos[this.state.index].videoId} closeModal={this.closeModal} prevVideo={this.prevVideo} nextVideo={this.nextVideo} /> : null }
       </div>
     );
