@@ -4,6 +4,7 @@ import Collection from './_/Collection';
 import Museum from './_/Museum';
 import Videos from './_/Videos';
 import VirtualTour from './_/VirtualTour';
+import MuseumCompetition from './_/MuseumCompetition';
 
 import './Home.css';
 
@@ -11,10 +12,11 @@ export default function Home(){
   return (
     <div className="home">
       <Layout>
-        <Collection />
         <Museum />
+        <Collection />
         <Videos />
         <VirtualTour />
+        <MuseumCompetition />
       </Layout>
     </div>
   );
