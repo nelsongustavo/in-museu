@@ -44,7 +44,10 @@ class ImageModal extends Component {
            <BootstrapModal.Title>{this.props.content}</BootstrapModal.Title>
          </BootstrapModal.Header>
          <BootstrapModal.Body>
-          <Image src={this.props.src} />
+         <Image src={this.props.src} />
+
+         <p>{this.props.description}</p>
+
           
           <a className="prev" onClick={this.prevImage}><img src="/images/button-left.svg" alt="prev" /></a>
           <a className="next" onClick={this.nextImage}><img src="/images/button-right.svg" alt="next"/></a>

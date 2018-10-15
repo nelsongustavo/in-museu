@@ -12,14 +12,14 @@ export default function Header() {
         		<Col md={4}>
 							<Navbar.Header>
 								<Navbar.Brand>
-									<Link id="home" to="inicio"  href="#home" spy smooth duration={500} offset={-70}>Museu da<span>Imprensa</span></Link>
+									<Link id="home" to="inicio" href="#home" spy smooth duration={500} offset={-70}>Museu da<span>Imprensa</span></Link>
 								</Navbar.Brand>
 							</Navbar.Header>
 						</Col>
 						<Col md={8}>
 							<Nav className="header-nav-menu">
-								<li><Link to="museu"  href="#" spy smooth duration={500} offset={-140}>O MUSEU</Link></li>
-								<li><Link to="acervo"  href="#" spy smooth duration={500} offset={-70}>ACERVO</Link></li>
+								<li><Link to="museu" href="#" spy smooth duration={500} offset={-140}>O MUSEU</Link></li>
+								<li><Link to="acervo" href="#" spy smooth duration={500} offset={-70}>ACERVO</Link></li>
 								<li><Link to="videos" href="#" spy smooth duration={500} offset={-80}>VÍDEOS</Link></li>
 								<li><Link to="virtual" href="#" spy smooth duration={500} offset={-120}>PASSEIO VIRTUAL</Link></li>
 								<li><Link to="museu-competition" href="#" spy smooth duration={500} offset={-150}>CONCURSO DO MUSEU</Link></li>

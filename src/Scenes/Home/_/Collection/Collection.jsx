@@ -10,28 +10,32 @@ const images = [
     src: '/images/foto_07.png',
     content: 'Exposição da Nau Medusa em miniatura',
 		dateTime: '15/05/2018',
-		date: '15 MAIO 2018'
+		date: '15 MAIO 2018',
+		description: 'Descrição 1'
   },
   {
 		id: 2,
     src: '/images/foto_02.png',
     content: 'Caixa Centenária da Independência',
 		dateTime: '15/05/2018',
-		date: '15 MAIO 2018'
+		date: '15 MAIO 2018',
+		description: 'Descrição 2'
 	},
 	{
 		id: 3,
     src: '/images/foto_27.png',
     content: 'Teclado Perfurador Monotipo Joana França',
 		dateTime: '15/05/2018',
-		date: '15 MAIO 2018'
+		date: '15 MAIO 2018',
+		description: 'Descrição 3'
 	},
 	{
 		id: 4,
     src: '/images/foto_12.png',
     content: 'Composição Vitrine Florões',
 		dateTime: '15/05/2018',
-		date: '15 MAIO 2018'
+		date: '15 MAIO 2018',
+		description: 'Descrição 4'
 	}
 ];
 
@@ -100,14 +104,14 @@ export default class Collection extends Component {
 					<Row>
 						<Col md={12} className="header-section">
 							<h1>Acervo</h1>
-							<div className="header-line"></div>
+							<div className="header-line" />
 						</Col>
 					</Row>
 					<Row className="section-gallery">
 					 { this.renderImages() }
 					</Row>
 				</Grid>
-				{ this.state.showModal ? <Modal content={image.content} src={image.src} closeModal={this.closeModal} prevImage={this.prevImage} nextImage={this.nextImage} /> : null }
+				{ this.state.showModal ? <Modal content={image.content} src={image.src} description={image.description} closeModal={this.closeModal} prevImage={this.prevImage} nextImage={this.nextImage} /> : null }
 			</div>
 		);
 	}
