@@ -9,14 +9,14 @@ export default function Header() {
       <header>
         <Navbar fixedTop>
         	<Row>
-        		<Col md={4}>
+        		<Col md={3}>
 							<Navbar.Header>
 								<Navbar.Brand>
 									<Link id="home" to="inicio" href="#home" spy smooth duration={500} offset={-70}>Museu da<span>Imprensa</span></Link>
 								</Navbar.Brand>
 							</Navbar.Header>
 						</Col>
-						<Col md={8}>
+						<Col md={9}>
 							<Nav className="header-nav-menu">
 								<li><Link to="museu" href="#" spy smooth duration={500} offset={-140}>O MUSEU</Link></li>
 								<li><Link to="acervo" href="#" spy smooth duration={500} offset={-70}>ACERVO</Link></li>

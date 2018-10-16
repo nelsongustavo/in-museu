@@ -30,7 +30,16 @@
 }
 
 .header .header-nav-menu li {
-	width: 20%;
+	text-align: right;
+	width: 15%;
+}
+
+.header .header-nav-menu li:nth-child(4) {
+	width: 24%;
+}
+
+.header .header-nav-menu li:nth-child(5) {
+	width: 30%;
 }
 
 .header .header-nav-menu li a {
