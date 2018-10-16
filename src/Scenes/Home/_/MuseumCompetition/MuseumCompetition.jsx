@@ -1,6 +1,5 @@
 import React from "react";
 import { Grid, Row, Col } from 'react-bootstrap';
-import { Link } from 'react-scroll';
 import './MuseumCompetition.css';
 
 export default function MuseumCompetition() {
@@ -10,7 +9,7 @@ export default function MuseumCompetition() {
 			<Grid>
 				<Row>
 					<Col md={8} mdOffset="2" className="header-section">
-						<h1>Um pouco sobre o Museu</h1>
+						<h1>Concurso do Museu</h1>
 		    		<div className="header-line" />
 					</Col>
 				</Row>
@@ -37,15 +36,6 @@ export default function MuseumCompetition() {
 						<p>Anualmente, essa instituição museológica promove o Concurso Museu da Imprensa de Desenho, Redação, Poesia e Monografia, que já chegou a décima quinta edição. É uma realização da Imprensa Nacional que atrai estudantes de todo o país.</p>
 					</Col>
 				</Row>
-				<div className="button-bottom">
-					<Grid>
-						<Row>
-							<Col md={2} mdOffset={5}>
-                				<Link className="next-section" to="videos" spy smooth duration={500} offset={-70}>&nbsp;</Link>
-							</Col>
-						</Row>
-					</Grid>
-				</div>
 			</Grid>
     </div>
   );
