@@ -61,6 +61,7 @@ class Footer extends Component {
               </Col>
             </Row>
           </Grid>
+          <div id="footer-brasil"></div>
         </footer>
       </div>
     );

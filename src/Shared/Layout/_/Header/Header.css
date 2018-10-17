@@ -1,5 +1,6 @@
 .header {
 	background: #F5F5F5;
+	margin-top: 42px;
 }
 
 .header nav.navbar {
@@ -7,6 +8,7 @@
 	background: #F5F5F5;
 	border-bottom: 1px solid #E3E3E3;
 	box-shadow: none;
+	margin-top: 42px;
 }
 
 .header .navbar-header .navbar-brand {
@@ -87,4 +89,29 @@
 	display: block;
 	margin: 0 auto;
     width: 4.6rem;
+}
+
+.header div#barra-brasil {
+	position: fixed;
+	top: 0;
+	z-index: 1040;
+	width: 100%;
+}
+
+.header ul#menu-barra-temp {
+	list-style:none;
+}
+
+.header ul#menu-barra-temp li {
+	display:inline; 
+	float:left;
+	padding-right:10px;
+	margin-right:10px; 
+	border-right:1px solid #EDEDED;
+}
+
+.header ul#menu-barra-temp li a{
+	font-family:sans,sans-serif; 
+	text-decoration:none; 
+	color:white;
 }

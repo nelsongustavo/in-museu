@@ -7,8 +7,15 @@ export default function Header() {
   return (
     <div className="header">
       <header>
+				<div id="barra-brasil">
+					<ul id="menu-barra-temp">
+						<li>
+								<a href="http://brasil.gov.br">Portal do Governo Brasileiro</a>
+						</li>
+					</ul>
+				</div>
         <Navbar fixedTop>
-        	<Row>
+					<Row>
         		<Col md={3}>
 							<Navbar.Header>
 								<Navbar.Brand>
