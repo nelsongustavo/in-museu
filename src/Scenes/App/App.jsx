@@ -1,15 +1,25 @@
 import React from 'react';
-import Layout from '../../Shared/Layout';
-import Videos from '../Home/_/Videos';
+import Videos from './_/Videos';
+import { Navbar, Row, Col } from 'react-bootstrap';
+import { Link } from 'react-scroll';
 
 import './App.css';
 
-export default function Home(){
+export default function App() {
   return (
     <div className="app">
-      <Layout>
-        <Videos />
-      </Layout>
+          <Navbar fixedTop>
+            <Row>
+              <Col md={3}>
+                <Navbar.Header>
+                  <Navbar.Brand>
+                    <Link id="home" to="inicio" href="#home" spy smooth duration={500} offset={-70}>Museu da<span>Imprensa</span></Link>
+                  </Navbar.Brand>
+                </Navbar.Header>
+              </Col>
+            </Row>
+				</Navbar>
+      <Videos />
     </div>
   );
 }

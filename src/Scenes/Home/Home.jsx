@@ -2,7 +2,6 @@ import React from 'react';
 import Layout from '../../Shared/Layout';
 import Collection from './_/Collection';
 import Museum from './_/Museum';
-import Videos from './_/Videos';
 import VirtualTour from './_/VirtualTour';
 import MuseumCompetition from './_/MuseumCompetition';
 
@@ -14,7 +13,6 @@ export default function Home(){
       <Layout>
         <Museum />
         <Collection />
-        <Videos />
         <VirtualTour />
         <MuseumCompetition />
       </Layout>
