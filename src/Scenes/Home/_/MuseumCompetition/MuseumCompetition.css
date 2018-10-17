@@ -16,12 +16,6 @@
 	margin: 1rem auto;
 }
 
-.museum-competition .content-section {
-	padding-top: 7rem;
-	background: url(/images/foto_03.png) no-repeat bottom right;
-	background-size: 52%;
-}
-
 .museum-competition .content-section h3 {
 	color: #B39F51;
 	font-family: 'Droid Serif Regular', sans-serif;
@@ -32,11 +26,6 @@
 	margin: 0;
 }
 
-.museum-competition .content-section div:nth-child(3),
-.museum-competition .content-section div:nth-child(4) {
-	padding-bottom: 35rem;;
-}
-
 .museum-competition .content-section p {
 	font-family: 'Droid Serif Regular', sans-serif;
 	font-size: 1.25rem;
@@ -45,13 +34,13 @@
 	margin-bottom: 2rem;
 }
 
-.museum-competition .button-bottom {
-	padding: 0;
+.museum-competition .content-section .col-md-5 {
+	text-align: center;
 }
 
-.museum-competition .button-bottom .container .next-section {
-	content: url("/images/angle-down.svg");
-	display: block;
-	margin: 0 auto;
-    width: 4.6rem;
+.museum-competition .content-section img {
+	width: 42rem;
+}
+.museum-competition .button-bottom {
+	padding: 0;
 }
