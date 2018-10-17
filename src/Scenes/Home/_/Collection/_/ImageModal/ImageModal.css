@@ -29,6 +29,11 @@
   width: 35rem
 }
 
+.modal .modal-body p {
+  margin-top: 3rem;
+  text-align: justify;
+}
+
 .modal .modal-body .prev img,
 .modal .modal-body .next img {
   width: 4rem;
