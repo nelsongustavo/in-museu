@@ -26,8 +26,8 @@ export default function Header() {
 						<Col md={9}>
 							<Nav className="header-nav-menu">
 								<li><Link to="museu" href="#" spy smooth duration={500} offset={-70}>O MUSEU</Link></li>
-								<li><Link to="acervo" href="#" spy smooth duration={500} offset={-70}>ACERVO</Link></li>
-								<li><Link to="videos" href="#" spy smooth duration={500} offset={-80}>VÍDEOS</Link></li>
+								<li><Link to="acervo" href="#" spy smooth duration={500} offset={-150}>ACERVO</Link></li>
+								<li><Link to="videos" href="#" spy smooth duration={500} offset={-90}>VÍDEOS</Link></li>
 								<li><Link to="virtual" href="#" spy smooth duration={500} offset={-120}>PASSEIO VIRTUAL</Link></li>
 								<li><Link to="museu-competition" href="#" spy smooth duration={500} offset={-150}>CONCURSO DO MUSEU</Link></li>
 							</Nav>
@@ -52,7 +52,7 @@ export default function Header() {
 					<Grid>
 						<Row>
 							<Col md={2} mdOffset={5}>
-								<Link className="next-section" to="acervo" spy smooth duration={500} offset={-70}>&nbsp;</Link>
+								<Link className="next-section" to="museu" spy smooth duration={500} offset={-70}>&nbsp;</Link>
 							</Col>
 						</Row>
 					</Grid>

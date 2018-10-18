@@ -41,7 +41,7 @@ export default function Museum() {
 					<Grid>
 						<Row>
 							<Col md={2} mdOffset={5}>
-                				<Link className="next-section" to="videos" spy smooth duration={500} offset={-70}>&nbsp;</Link>
+                				<Link className="next-section" to="acervo" spy smooth duration={500} offset={-150}>&nbsp;</Link>
 							</Col>
 						</Row>
 					</Grid>
