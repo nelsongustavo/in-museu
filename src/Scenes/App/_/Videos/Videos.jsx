@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { Row } from 'react-bootstrap';
+import { Grid, Col } from 'react-bootstrap';
 import _ from "lodash";
 import Video from './_/Video';
 import './Videos.css';
@@ -78,10 +78,14 @@ export default class Videos extends Component {
   render() {
     return (
       <div id="videos" className="videos">
-        { this.renderCurrentVideo() }
-        <Row>
+        <Grid>
+          <Col md={6}>
+            { this.renderCurrentVideo() }
+          </Col>
+          <Col md={6}>
           { this.renderVideos() }
-        </Row>
+          </Col>
+        </Grid>
       </div>
     );
   }
