@@ -8,14 +8,14 @@ import "video-react/dist/video-react.css";
 const videos = [
   {
     title: 'Impressão do Diário Oficial da União',
-    content: 'O Museu da Imprensa exibe modelos dessas máquinas, de origem norte-americana.',
+    content: 'Veja como era o processo de impressão do Diário Oficial da União',
     url: '/videos/Pexels Videos 4718.mp4',
     image: '/images/foto_08.png',
     date: 'AGOSTO 18',
     push: false
   },
   {
-    title: 'Conheça a ultima maquina usada na impressão do DOU',
+    title: 'Ouça o som desta máquina durante a impressão Diário',
     content: 'Neste vídeo é possível conferir um pouco como era o dia a dia de impressão do Diário Oficial da União antes da desativação oficial da impressão em papel.',
     url: '/videos/Pexels Videos 4721.mp4',
     image: '/images/foto_04.png',
