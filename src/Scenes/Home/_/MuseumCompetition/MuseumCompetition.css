@@ -34,6 +34,23 @@
 	margin-bottom: 2rem;
 }
 
+.museum-competition .content-section ul {
+	font-family: 'Droid Serif Regular', sans-serif;
+	font-size: 1.25rem;
+	font-weight: normal;
+	line-height: 2.2rem;
+	margin-bottom: 2rem;
+	padding-left: 1.2rem;
+}
+
+.museum-competition .content-section ul li {
+	padding-bottom: 0.4rem;
+}
+
+.museum-competition .content-section ul li a {
+	color: #333;
+}
+
 .museum-competition .content-section .col-md-5 {
 	text-align: center;
 }

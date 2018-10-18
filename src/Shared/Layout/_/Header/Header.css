@@ -1,6 +1,6 @@
 .header {
 	background: #F5F5F5;
-	margin-top: 42px;
+	margin-top: 16px;
 }
 
 .header nav.navbar {
@@ -88,7 +88,7 @@
 	content: url("/images/angle-down.svg");
 	display: block;
 	margin: 0 auto;
-    width: 4.6rem;
+  width: 4.6rem;
 }
 
 .header div#barra-brasil {
@@ -114,4 +114,10 @@
 	font-family:sans,sans-serif; 
 	text-decoration:none; 
 	color:white;
+}
+
+.header #barra-brasil div, 
+.header #barra-brasil ul, 
+.header #barra-brasil li {
+	font-size: 16px;
 }

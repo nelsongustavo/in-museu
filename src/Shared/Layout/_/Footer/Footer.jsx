@@ -27,7 +27,7 @@ class Footer extends Component {
             <Row>
               <Col md={12}>
                 <Nav className="footer-nav-menu">
-                  <li><Link to="inicio" href="#" spy smooth duration={500} offset={-70}>INÍCIO</Link></li>
+                  <li><Link to="inicio" href="#" spy smooth duration={500} offset={-120}>INÍCIO</Link></li>
                   <li><Link to="museu"  href="#" spy smooth duration={500} offset={-140}>O MUSEU</Link></li>
                   <li><Link to="acervo"  href="#" spy smooth duration={500} offset={-70}>ACERVO</Link></li>
                   <li><Link to="videos" href="#" spy smooth duration={500} offset={-80}>VÍDEOS</Link></li>
