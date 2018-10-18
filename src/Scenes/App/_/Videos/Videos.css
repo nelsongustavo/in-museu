@@ -1,13 +1,13 @@
 .videos {
-    background: #F5F5F5;
+		background: #F5F5F5;
+		padding-top: 6rem;
     padding-bottom: 6.4rem;
 }
 
-.videos .header-section h1 {
+.videos .principal h1 {
 	font-family: 'Playfair Display', serif;
 	font-size: 6.8rem;
 	margin: 6.4rem 0 0 0;
-	text-align: center;
 }
 
 .videos .content-section {
