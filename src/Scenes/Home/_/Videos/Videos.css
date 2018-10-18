@@ -1,0 +1,54 @@
+.videos {
+    background: #F5F5F5;
+    padding-bottom: 6.4rem;
+}
+
+.videos .header-section h1 {
+	font-family: 'Playfair Display', serif;
+	font-size: 6.8rem;
+	margin: 6.4rem 0 0 0;
+	text-align: center;
+}
+
+.videos .content-section {
+	cursor: pointer;
+}
+
+.videos .content-section img {
+	width: 40rem;
+}
+
+.videos .content-section time {
+	font-family: 'Poppins', serif;
+	font-size: 1.2rem;
+	font-weight: 300;
+	color: #B39F51;
+	float: left;
+}
+
+.videos .content-section h2 {
+	font-family: 'Playfair Display', serif;
+	font-size: 4rem;
+	padding: 2.5rem 0 2.2rem 0;
+	margin: 0;
+	clear: both;
+}
+
+.videos .content-section p {
+	font-family: 'Playfair Display', serif;
+	font-size: 1.6rem;
+	line-height: 2.6rem;
+}
+
+.videos .content-section .header-line-h {
+	background: #B39F51;
+	float: left;
+	height: 1px;
+	margin-left: 25px;
+	margin-top: 8px;
+	width: 10rem;
+}
+
+.videos .content-section .col-md-6.col-md-offset-1 {
+	padding-top: 8rem;
+}
