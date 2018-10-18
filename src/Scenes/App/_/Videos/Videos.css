@@ -1,60 +1,59 @@
-.videos {
+.videos-totem {
 		background: #F5F5F5;
-    padding-bottom: 6.4rem;
+		padding-bottom: 0;
+    height: 88.4vh;
 }
 
-.videos .principal h1 {
+.videos-totem .principal h1 {
 	font-family: 'Playfair Display', serif;
 	font-size: 6.8rem;
 	margin: 6.4rem 0 2rem 0;
 }
 
-.videos .principal p {
+.videos-totem .principal p {
 	font-family: 'Poppins', serif;
 	font-size: 1.8rem;
 	font-weight: 300;
 	padding: 1.4rem 0;
 }
 
-.videos .content-section {
-	cursor: pointer;
+.videos-totem .highlights-column.col-md-4 {
+	padding-top: 27rem;
 }
 
-.videos .content-section img {
-	width: 40rem;
-}
-
-.videos .content-section time {
-	font-family: 'Poppins', serif;
-	font-size: 1.2rem;
-	font-weight: 300;
-	color: #B39F51;
-	float: left;
-}
-
-.videos .content-section h2 {
-	font-family: 'Playfair Display', serif;
-	font-size: 4rem;
-	padding: 2.5rem 0 2.2rem 0;
-	margin: 0;
-	clear: both;
-}
-
-.videos .content-section p {
-	font-family: 'Playfair Display', serif;
-	font-size: 1.6rem;
-	line-height: 2.6rem;
-}
-
-.videos .content-section .header-line-h {
-	background: #B39F51;
-	float: left;
-	height: 1px;
-	margin-left: 25px;
-	margin-top: 8px;
+.videos-totem .highlights-column.col-md-4 img {
 	width: 10rem;
 }
 
-.videos .content-section .col-md-6.col-md-offset-1 {
-	padding-top: 8rem;
+.videos-totem .highlights-column.col-md-4 .content-section {
+	cursor: pointer;
+	padding-top: 6rem;
+}
+
+.videos-totem .highlights-column.col-md-4 .content-section h2 {
+	font-family: 'Playfair Display', serif;
+	font-size: 2.6rem;
+	margin: 0;
+}
+
+.videos-totem .highlights-column.col-md-4 .content-section p {
+	font-family: 'Poppins', serif;
+	font-size: 1.4rem;
+	line-height: 2rem;
+	margin: 2rem 0 0 0;
+}
+
+.videos-totem .principal .video-react .video-react-poster {
+	background-color: #F5F5F5;
+}
+
+.videos-totem .principal .video-react .video-react-big-play-button {
+	border: 0;
+	border-radius: 5rem;
+	width: 2em;
+	height: 2em;
+	line-height: 2em;
+	top: 50%;
+	left: 50%;
+	margin: -1em 0 0 -1em;
 }

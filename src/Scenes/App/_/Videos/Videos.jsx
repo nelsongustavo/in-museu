@@ -8,24 +8,24 @@ import "video-react/dist/video-react.css";
 const videos = [
   {
     title: 'Impressão do Diário Oficial da União',
-    content: 'Veja como era o processo de impressão do Diário Oficial da União',
-    url: '/videos/Pexels Videos 4718.mp4',
-    image: '/images/foto_08.png',
+    content: 'Veja como era o processo de impressão do Diário Oficial da União na Imprensa Nacional.',
+    url: '/videos/impressora_atual.mp4',
+    image: '/images/foto_04.png',
     date: 'AGOSTO 18',
     push: false
   },
   {
-    title: 'Ouça o som desta máquina durante a impressão Diário',
-    content: 'Neste vídeo é possível conferir um pouco como era o dia a dia de impressão do Diário Oficial da União antes da desativação oficial da impressão em papel.',
-    url: '/videos/Pexels Videos 4721.mp4',
-    image: '/images/foto_04.png',
+    title: 'Máquina pautadeira do Museu da Imprensa',
+    content: 'O Museu da Imprensa exibe modelos dessas máquinas, de origem norte-americana.',
+    url: '/videos/maquina_pautadeira.mp4',
+    image: '/images/foto_08.png',
     date: 'AGOSTO 18',
     push: true
   },
   {
-    title: 'Conheça detalhes da Máquina Tipográfica Tip Top',
+    title: 'Conheça a Máquina Tipográfica Tip Top',
     content: 'Minervas sucederam as prensas e prelos." Na evolução histórica da impressão, elas sucederam as prensas tipográficas manuais — dos séculos XVI e XVII — e os prelos.',
-    url: '/videos/Pexels Videos 1096625.mp4',
+    url: '/videos/maquina_tip_top.mp4',
     image: '/images/foto_05.png',
     date: 'AGOSTO 18',
     push: false
@@ -49,11 +49,15 @@ export default class Videos extends Component {
       if (i !== this.state.index ) {
         return (
           <div className="content-section" key={video.url} onClick={() => this.handleModalButton(i)}>
-            <img src={video.image} alt={video.title} />
-            <time datetime={video.date}>{video.date}</time>
-            <div className="header-line-h" />
-            <h2>{video.title}</h2>
-            <p>{video.content}</p>
+            <Row>
+              <Col md={3}>
+                <img src={video.image} alt={video.title} />
+              </Col>
+              <Col md={9}>
+                <h2>{video.title}</h2>
+                <p>{video.content}</p>
+              </Col>
+            </Row>
           </div>
         );
       }
@@ -78,13 +82,13 @@ export default class Videos extends Component {
 
   render() {
     return (
-      <div id="videos" className="videos">
+      <div id="videos" className="videos-totem">
         <Grid>
           <Row>
             <Col md={8}>
               { this.renderCurrentVideo() }
             </Col>
-            <Col md={4}>
+            <Col className="highlights-column" md={4}>
               { this.renderVideos() }
             </Col>
           </Row>
