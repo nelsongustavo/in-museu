@@ -1,7 +1,7 @@
 .videos-totem {
-		background: #F5F5F5;
-		padding-bottom: 0;
-    height: 88.4vh;
+	background: #F5F5F5;
+	padding-bottom: 6.4rem;
+    min-height: 88.4vh;
 }
 
 .videos-totem .principal h1 {
