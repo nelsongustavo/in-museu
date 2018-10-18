@@ -70,30 +70,30 @@
   }
 }
 
-  .app {
-    background: #F5F5F5;
-  }
+.app {
+  background: #F5F5F5;
+}
 
-  .app nav.navbar {
-    background-image: none;
-    background: #F5F5F5;
-    border-bottom: 1px solid #E3E3E3;
-    box-shadow: none;
-  }
+.app nav.navbar {
+  background-image: none;
+  background: #F5F5F5;
+  border-bottom: 1px solid #E3E3E3;
+  box-shadow: none;
+}
 
-  .app .navbar-header .navbar-brand {
-    color: #000;
-    font-family: 'Droid Serif Regular', sans-serif;
-    font-weight: normal;
-    font-size: 2rem;
-    line-height: 3.5rem;
-    height: auto;
-    padding-bottom: 3.3rem;
-    text-transform: initial;
-  }
+.app .navbar-header .navbar-brand {
+  color: #000;
+  font-family: 'Droid Serif Regular', sans-serif;
+  font-weight: normal;
+  font-size: 2rem;
+  line-height: 3.5rem;
+  height: auto;
+  padding-bottom: 3.3rem;
+  text-transform: initial;
+}
 
-  .app .navbar-header .navbar-brand span {
-    color: #000;
-    font-size: 4.5rem;
-    display: block;
-  }
+.app .navbar-header .navbar-brand span {
+  color: #000;
+  font-size: 4.5rem;
+  display: block;
+}

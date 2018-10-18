@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { Grid, Col } from 'react-bootstrap';
+import { Grid, Row, Col } from 'react-bootstrap';
 import _ from "lodash";
 import Video from './_/Video';
 import './Videos.css';
@@ -7,7 +7,7 @@ import "video-react/dist/video-react.css";
 
 const videos = [
   {
-    title: 'Máquina Pautadeira',
+    title: 'Impressão do Diário Oficial da União',
     content: 'O Museu da Imprensa exibe modelos dessas máquinas, de origem norte-americana.',
     url: '/videos/Pexels Videos 4718.mp4',
     image: '/images/foto_08.png',
@@ -80,12 +80,14 @@ export default class Videos extends Component {
     return (
       <div id="videos" className="videos">
         <Grid>
-          <Col md={8}>
-            { this.renderCurrentVideo() }
-          </Col>
-          <Col md={4}>
-            { this.renderVideos() }
-          </Col>
+          <Row>
+            <Col md={8}>
+              { this.renderCurrentVideo() }
+            </Col>
+            <Col md={4}>
+              { this.renderVideos() }
+            </Col>
+          </Row>
         </Grid>
       </div>
     );
