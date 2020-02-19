@@ -10,23 +10,23 @@ const videos = [
     content: 'O Museu da Imprensa exibe modelos dessas máquinas, de origem norte-americana.',
     videoId: 'hp-nipVPp60',
     image: '/images/foto_08.png',
-    date: 'AGOSTO 18',
+    date: 'Agosto/2018',
     push: false
   },
   {
-    title: 'Conheça a ultima maquina usada na impressão do DOU',
-    content: 'Neste vídeo é possível conferir um pouco como era o dia a dia de impressão do Diário Oficial da União antes da desativação oficial da impressão em papel.',
+    title: 'Conheça a última máquina usada na impressão do DOU',
+    content: 'Neste vídeo é possível conferir um pouco como era o dia a dia da impressão do Diário Oficial da União antes da desativação oficial da impressão em papel.',
     videoId: '_kuv4L8rUOY',
     image: '/images/foto_04.png',
-    date: 'AGOSTO 18',
+    date: 'Agosto/2018',
     push: true
   },
   {
     title: 'Conheça detalhes da Máquina Tipográfica Tip Top',
-    content: 'Minervas sucederam as prensas e prelos." Na evolução histórica da impressão, elas sucederam as prensas tipográficas manuais — dos séculos XVI e XVII — e os prelos.',
+    content: 'Minervas sucederam as prensas e prelos. Na evolução histórica da impressão, elas sucederam as prensas tipográficas manuais, dos séculos XVI e XVII, e os prelos.',
     videoId: 'EXhfaDXATgg',
     image: '/images/foto_05.png',
-    date: 'AGOSTO 18',
+    date: 'Agosto/2018',
     push: false
   }
 ];

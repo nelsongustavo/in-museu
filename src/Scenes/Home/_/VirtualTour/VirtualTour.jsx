@@ -53,7 +53,7 @@ export default class VirtualTour extends Component {
 					</Row>
 					<Row>
 						<Col md={4} mdOffset={4} className="btn-section">
-							<a href="#virtualTour" onClick={this.handleModalButton} className="custom-btn" title="Acesse nosso Tour Virtual">ACESSE AGORA</a>
+							<a href="#virtualTour" onClick={this.handleModalButton} className="custom-btn" title="Acesse nosso Tour Virtual">Acesse Agora</a>
 						</Col>
 					</Row>
 				</Grid>

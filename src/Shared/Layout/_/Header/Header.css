@@ -53,10 +53,6 @@
 	line-height: normal;
 }
 
-.header .banner-header {
-	height: 40vw;
-}
-
 .header .banner-header .container {
 	background: url(/images/foto_01.png) no-repeat right center;
 	background-size: contain;

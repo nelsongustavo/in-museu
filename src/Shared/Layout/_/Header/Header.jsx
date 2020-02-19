@@ -43,7 +43,7 @@ export default function Header() {
 						</Row>
 						<Row>
 							<Col md={4}>
-								<p>Confira em nosso <span>tour virtual</span> um pouco mais da história da  <span>primeira rotativa</span> de grande porte <span>importada pelo Brasil</span> no Governo Rodrigues Alves para <span>servir a Imprensa Nacional.</span></p>
+								<p>Confira em nosso <span>“Tour Virtual”</span> um pouco mais da história da <span>primeira rotativa</span> de grande porte <span>importada pelo Brasil</span>, no Governo Rodrigues Alves, para <span>servir à Imprensa Nacional.</span></p>
 							</Col>
 						</Row>
 					</Grid>

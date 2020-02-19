@@ -24,7 +24,7 @@ const videos = [
   },
   {
     title: 'Conheça a Máquina Tipográfica Tip Top',
-    content: 'Minervas sucederam as prensas e prelos." Na evolução histórica da impressão, elas sucederam as prensas tipográficas manuais — dos séculos XVI e XVII — e os prelos.',
+    content: 'Minervas sucederam as prensas e prelos. Na evolução histórica da impressão, elas sucederam as prensas tipográficas manuais, dos séculos XVI e XVII, e os prelos.',
     url: '/videos/maquina_tip_top.mp4',
     image: '/images/foto_05.png',
     date: 'AGOSTO 18',
