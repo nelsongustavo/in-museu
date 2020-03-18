@@ -21,9 +21,9 @@ export default function MuseumCompetition() {
 						<img src="/images/cartaz.jpg" alt="Imprensa Nacional divulga o Regulamento do 19º Concurso Nacional Museu da Imprensa: Desenho, Redação e Artigo como criar blog" />
 					</Col>
 					<Col md={4}>
-						<p>No esforço continuado de cumprir a sua responsabilidade educacional e sociocultural de estimular a reflexão sobre os valores da memória nacional, a Imprensa Nacional realiza periodicamente o Concurso Nacional Museu da Imprensa de Desenho, Redação e Artigo, acreditando no comprometimento e no talento dos (das) jovens estudantes do nosso País.</p>
+						<p>No esforço continuado de cumprir a sua responsabilidade educacional e sociocultural de estimular a reflexão sobre os valores da memória nacional, a Imprensa Nacional realiza periodicamente o Concurso Nacional Museu da Imprensa de Desenho, Redação e Artigo, acreditando no comprometimento e no talento de jovens estudantes do nosso País.</p>
 
-						<p>O Concurso Nacional Museu da Imprensa é uma iniciativa cultural bem-sucedida da Imprensa Nacional que tem por objetivo principal promover a disseminação e a preservação da memória da Imprensa e das artes gráficas no Brasil, por meio do registro da produção intelectual e artística dos (das) estudantes das escolas públicas e privadas de todo o território brasileiro, motivo de grande satisfação para a Imprensa Nacional.</p>
+						<p>O Concurso Nacional Museu da Imprensa é uma iniciativa cultural bem-sucedida da Imprensa Nacional que tem por objetivo principal promover a disseminação e a preservação da memória da Imprensa e das artes gráficas no Brasil, por meio do registro da produção intelectual e artística de estudantes das escolas públicas e privadas de todo o território brasileiro, motivo de grande satisfação para a Imprensa Nacional.</p>
 
 						<p>O próximo Concurso (20ª Edição) está previsto para o primeiro semestre de 2020. Fique atento e não perca essa oportunidade!</p>
 					</Col>
