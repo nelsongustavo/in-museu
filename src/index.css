@@ -4,6 +4,10 @@ body {
   font-family: sans-serif;
 }
 
+p {
+  text-align: justify;
+}
+
 .custom-modal {
   width: 80%;
 }

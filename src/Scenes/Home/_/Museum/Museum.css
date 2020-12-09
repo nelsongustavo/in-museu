@@ -18,8 +18,10 @@
 
 .museum .content-section {
 	padding-top: 7rem;
-	background: url(/images/foto_03.png) no-repeat bottom right;
-	background-size: 52%;
+	background: url(/images/foto_04.png) no-repeat;
+	background-size: 34%;
+	background-position-x: 88%;
+	background-position-y: bottom;
 }
 
 .museum .content-section h3 {

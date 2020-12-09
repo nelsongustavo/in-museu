@@ -6,7 +6,7 @@ import './Videos.css';
 
 const videos = [
   {
-    title: 'Conheça no detalhe a máquina de pautadeira da Imprensa',
+    title: 'Conheça no detalhe a máquina de pautar da Imprensa',
     content: 'O Museu da Imprensa exibe modelos dessas máquinas, de origem norte-americana.',
     videoId: 'hp-nipVPp60',
     image: '/images/foto_08.png',
@@ -14,10 +14,10 @@ const videos = [
     push: false
   },
   {
-    title: 'Conheça a última máquina usada na impressão do DOU',
-    content: 'Neste vídeo é possível conferir um pouco como era o dia a dia da impressão do Diário Oficial da União antes da desativação oficial da impressão em papel.',
-    videoId: '_kuv4L8rUOY',
-    image: '/images/foto_04.png',
+    title: 'Conheça a primeira máquina usada na impressão do DOU em Brasília',
+    content: 'Neste vídeo é possível conferir um pouco sobre a rotativa que imprimiu as primeiras edições do Diário Oficial em Brasília, a partir de 22 de abril de 1960, até a sua desativação no dia 30 de novembro de 1977.',
+    videoId: 'w_fn4C7QrZI',
+    image: '/images/foto_03.png',
     date: 'Agosto/2018',
     push: true
   },

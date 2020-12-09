@@ -51,4 +51,11 @@
 
 .videos .content-section .col-md-6.col-md-offset-1 {
 	padding-top: 8rem;
+	padding-bottom: 8rem;
+}
+
+.videos .container .content-section:nth-child(3) .col-md-4.col-md-offset-1.col-md-push-6 img {
+	margin-top: 4rem;
+	margin-left: -7.5rem;
+	width: 58rem;
 }
